@@ -377,7 +377,7 @@ public class NanopubFromCoDa {
                           tempNpCreator.setNanopubUri(thisNano);
                           tempNpCreator.addPubinfoStatement(createdOn, factory.createLiteral(new Date()));
                           tempNpCreator.addPubinfoStatement(createdBy, factory.createIRI("http://orcid.org/0000-0002-1144-6265"));
-                          tempNpCreator.addPubinfoStatement(createdWith, factory.createIRI("https://github.com/ImranAsif48/CodaToNanopub"));
+                          tempNpCreator.addPubinfoStatement(createdWith, factory.createIRI("https://github.com/ImranAsif48/CoDaToNanopublicationIncremental"));
                           tempNpCreator.addPubinfoStatement(lisence, factory.createIRI("https://creativecommons.org/licenses/by-sa/3.0/"));
                           tempNpCreator.addPubinfoStatement(importedFrom, factory.createLiteral("CoDa Version", XMLSchema.STRING));
 
