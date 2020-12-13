@@ -1,0 +1,59 @@
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano1572_2020-08-20-161312_635#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG01276_1.2.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/punishmentRule";
+    codaNP:has-effect-value 1.2413E-1;
+    codaNP:has-sample-size 1.2E2;
+    codaNP:has-stderr 8.331E-3;
+    codaNP:has-var 8.32859E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "A. Takeuchi", "T. Nihonsugi", "Y. Funaki", "Y. Kamijo";
+    dct:date "2014-03-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG01276_1;
+    cp:doi <http://dx.doi.org/10.1016/j.geb.2014.01.002>;
+    cp:maleProportion 5.86956E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "4"^^xsd:int;
+    cp:studyMPCR 3.5E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "25"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2010"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-08-20T16:13:13.557+01:00"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v1.0.0.0" .
+}

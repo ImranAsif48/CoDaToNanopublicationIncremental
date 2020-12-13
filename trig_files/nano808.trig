@@ -1,0 +1,56 @@
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano808_2020-08-20-155849_209#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00637_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/feedbackContent";
+    codaNP:has-effect-value 8.07315E-2;
+    codaNP:has-sample-size 1.37E2;
+    codaNP:has-stderr 7.2846E-3;
+    codaNP:has-var 7.26997E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "David De Cremer", "Eric van Dijk";
+    dct:date "2002-09-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00637_1;
+    cp:doi <http://dx.doi.org/10.1016/s0022-1031(02)00009-4>;
+    cp:maleProportion 5.91549E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3>;
+    cp:studyGroupSize "7"^^xsd:int;
+    cp:studyMPCR 2.857143E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "301"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2000"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3> rdfs:label "Class" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-08-20T15:58:50.088+01:00"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v1.0.0.0" .
+}

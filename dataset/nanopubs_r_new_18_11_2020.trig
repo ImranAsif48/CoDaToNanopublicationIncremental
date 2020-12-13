@@ -1,0 +1,2986 @@
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano1_2020-11-18-201722_038#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG01890_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 1.45701E-1;
+    codaNP:has-sample-size 1.23E2;
+    codaNP:has-stderr 8.2311E-3;
+    codaNP:has-var 8.33333E-3 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG01890_1;
+    cp:doi <http://dx.doi.org/10.1177/0093650205283102>;
+    cp:maleProportion 3.25203E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "3"^^xsd:int, "4"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "26"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2003"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3> rdfs:label "Class" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:23.063Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano2_2020-11-18-201723_122#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG01890_1.2.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/symmetric";
+    codaNP:has-effect-value -6.84829E-2;
+    codaNP:has-sample-size 8.2E1;
+    codaNP:has-stderr 1.50807E-2;
+    codaNP:has-var 1.8649E-2 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG01890_1;
+    cp:doi <http://dx.doi.org/10.1177/0093650205283102>;
+    cp:maleProportion 3.25203E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "3"^^xsd:int, "4"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "26"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2003"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3> rdfs:label "Class" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:23.945Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano3_2020-11-18-201724_228#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG01890_1.2.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/symmetric";
+    codaNP:has-effect-value -1.29731E-1;
+    codaNP:has-sample-size 8.2E1;
+    codaNP:has-stderr 1.48012E-2;
+    codaNP:has-var 1.79642E-2 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG01890_1;
+    cp:doi <http://dx.doi.org/10.1177/0093650205283102>;
+    cp:maleProportion 3.25203E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "3"^^xsd:int, "4"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "26"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2003"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3> rdfs:label "Class" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:25.050Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano4_2020-11-18-201725_063#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG01890_1.2.2.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/symmetryTarget";
+    codaNP:has-effect-value -6.20726E-2;
+    codaNP:has-sample-size 8.2E1;
+    codaNP:has-stderr 1.43581E-2;
+    codaNP:has-var 1.69047E-2 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG01890_1;
+    cp:doi <http://dx.doi.org/10.1177/0093650205283102>;
+    cp:maleProportion 3.25203E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "3"^^xsd:int, "4"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "26"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2003"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3> rdfs:label "Class" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:25.863Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano5_2020-11-18-201725_878#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG02458_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/gameType";
+    codaNP:has-effect-value 5.25606E-1;
+    codaNP:has-sample-size 2.0E2;
+    codaNP:has-stderr 5.4401E-3;
+    codaNP:has-var 5.91904E-3 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG02458_1;
+    cp:doi <http://dx.doi.org/10.1111/j.1559-1816.2008.00301.x>;
+    cp:maleProportion 3.4E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "60001"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "2008"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/3> rdfs:label "Class" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:26.735Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano8_2020-11-18-201729_027#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00006_1.3.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 8.23716E-2;
+    codaNP:has-sample-size 7.6E1;
+    codaNP:has-stderr 1.799E-2;
+    codaNP:has-var 2.45967E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "K. Abbink";
+    dct:date "2006-07-06"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00006_1;
+    cp:doi <http://dx.doi.org/10.1093/ei/cbl001>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "2"^^xsd:int, "4"^^xsd:int, "8"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2006"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:29.806Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano3_2020-08-20-154527_493#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano9_2020-11-18-201729_809#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00006_1.3.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 9.86243E-2;
+    codaNP:has-sample-size 8.0E1;
+    codaNP:has-stderr 1.70633E-2;
+    codaNP:has-var 2.32926E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "K. Abbink";
+    dct:date "2006-07-06"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00006_1;
+    cp:doi <http://dx.doi.org/10.1093/ei/cbl001>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "2"^^xsd:int, "4"^^xsd:int, "8"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2006"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:30.566Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano4_2020-08-20-154528_268#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano10_2020-11-18-201730_570#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00006_1.3.2.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 2.24983E-2;
+    codaNP:has-sample-size 1.24E2;
+    codaNP:has-stderr 1.01066E-2;
+    codaNP:has-var 1.26658E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "K. Abbink";
+    dct:date "2006-07-06"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00006_1;
+    cp:doi <http://dx.doi.org/10.1093/ei/cbl001>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "2"^^xsd:int, "4"^^xsd:int, "8"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2006"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:31.396Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano5_2020-08-20-154529_020#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano11_2020-11-18-201731_402#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00006_1.4.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 6.95439E-2;
+    codaNP:has-sample-size 7.6E1;
+    codaNP:has-stderr 2.83201E-2;
+    codaNP:has-var 6.09543E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "K. Abbink";
+    dct:date "2006-07-06"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00006_1;
+    cp:doi <http://dx.doi.org/10.1093/ei/cbl001>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "2"^^xsd:int, "4"^^xsd:int, "8"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2006"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:32.227Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano6_2020-08-20-154529_787#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano12_2020-11-18-201732_235#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00006_1.4.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 2.42944E-1;
+    codaNP:has-sample-size 8.0E1;
+    codaNP:has-stderr 2.60093E-2;
+    codaNP:has-var 5.41189E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "K. Abbink";
+    dct:date "2006-07-06"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00006_1;
+    cp:doi <http://dx.doi.org/10.1093/ei/cbl001>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "2"^^xsd:int, "4"^^xsd:int, "8"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2006"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:33.130Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano7_2020-08-20-154530_534#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano13_2020-11-18-201733_136#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00006_1.4.2.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 2.21778E-1;
+    codaNP:has-sample-size 1.24E2;
+    codaNP:has-stderr 1.39963E-2;
+    codaNP:has-var 2.42912E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "K. Abbink";
+    dct:date "2006-07-06"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00006_1;
+    cp:doi <http://dx.doi.org/10.1093/ei/cbl001>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "2"^^xsd:int, "4"^^xsd:int, "8"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2006"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:17:35.163Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano8_2020-08-20-154531_357#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano48_2020-11-18-201815_264#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame";
+    codaNP:has-effect-value -5.70171E-1;
+    codaNP:has-sample-size 7.2E1;
+    codaNP:has-stderr 1.91597E-2;
+    codaNP:has-var 2.64308E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:16.274Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano43_2020-08-20-154605_857#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano49_2020-11-18-201816_279#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.1.4.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame";
+    codaNP:has-effect-value -4.13751E-1;
+    codaNP:has-sample-size 7.2E1;
+    codaNP:has-stderr 1.65108E-2;
+    codaNP:has-var 1.96277E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:17.741Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano44_2020-08-20-154606_606#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano50_2020-11-18-201817_744#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.1.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame", "https://data.cooperationdatabank.org/vocab/prop/focalPointFrame";
+    codaNP:has-effect-value -2.18179E-1;
+    codaNP:has-sample-size 1.08E2;
+    codaNP:has-stderr 1.05737E-2;
+    codaNP:has-var 1.20747E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:19.202Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano45_2020-08-20-154607_500#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano51_2020-11-18-201819_203#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.2.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame";
+    codaNP:has-effect-value -6.46898E-1;
+    codaNP:has-sample-size 7.2E1;
+    codaNP:has-stderr 2.00681E-2;
+    codaNP:has-var 2.89964E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:20.408Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano46_2020-08-20-154608_647#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano52_2020-11-18-201820_410#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.2.4.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame";
+    codaNP:has-effect-value -5.19976E-1;
+    codaNP:has-sample-size 7.2E1;
+    codaNP:has-stderr 1.7571E-2;
+    codaNP:has-var 2.22293E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:22.650Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano47_2020-08-20-154609_620#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano53_2020-11-18-201822_655#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.2.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame", "https://data.cooperationdatabank.org/vocab/prop/focalPointFrame";
+    codaNP:has-effect-value -3.46191E-1;
+    codaNP:has-sample-size 1.08E2;
+    codaNP:has-stderr 1.15565E-2;
+    codaNP:has-var 1.44236E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:24.724Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano48_2020-08-20-154610_359#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano54_2020-11-18-201825_025#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.3.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame", "https://data.cooperationdatabank.org/vocab/prop/focalPointFrame";
+    codaNP:has-effect-value 3.95633E-1;
+    codaNP:has-sample-size 1.08E2;
+    codaNP:has-stderr 1.3297E-2;
+    codaNP:has-var 1.90956E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:25.798Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano49_2020-08-20-154611_448#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano55_2020-11-18-201825_805#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00022_1.6.4.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/contextFrame", "https://data.cooperationdatabank.org/vocab/prop/focalPointFrame";
+    codaNP:has-effect-value 2.00748E-1;
+    codaNP:has-sample-size 1.08E2;
+    codaNP:has-stderr 1.0955E-2;
+    codaNP:has-var 1.29614E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Icek Ajzen";
+    dct:date "1971-06-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00022_1;
+    cp:doi <http://dx.doi.org/10.2307/2786416>;
+    cp:maleProportion 5.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/0>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1971"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/0> rdfs:label "Hypothetical" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:26.586Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano50_2020-08-20-154613_236#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano62_2020-11-18-201839_362#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/endowmentSize", "https://data.cooperationdatabank.org/vocab/prop/endowmentSymmetric",
+      "https://data.cooperationdatabank.org/vocab/prop/symmetric";
+    codaNP:has-effect-value -4.42807E-1;
+    codaNP:has-sample-size 7.0E1;
+    codaNP:has-stderr 1.88059E-2;
+    codaNP:has-var 2.47564E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:40.524Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano57_2020-08-20-154619_303#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano63_2020-11-18-201840_532#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/endowmentSize", "https://data.cooperationdatabank.org/vocab/prop/endowmentSymmetric",
+      "https://data.cooperationdatabank.org/vocab/prop/symmetric";
+    codaNP:has-effect-value 9.39496E-2;
+    codaNP:has-sample-size 7.0E1;
+    codaNP:has-stderr 1.59816E-2;
+    codaNP:has-var 1.78789E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:41.354Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano58_2020-08-20-154620_062#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano64_2020-11-18-201841_361#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.1.4.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentSymmetric",
+      "https://data.cooperationdatabank.org/vocab/prop/symmetric", "https://data.cooperationdatabank.org/vocab/prop/threshold",
+      "https://data.cooperationdatabank.org/vocab/prop/thresholdLevel";
+    codaNP:has-effect-value -5.47477E-1;
+    codaNP:has-sample-size 7.0E1;
+    codaNP:has-stderr 2.20065E-2;
+    codaNP:has-var 3.39001E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:42.088Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano59_2020-08-20-154620_877#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano65_2020-11-18-201842_090#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.1.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentSymmetric",
+      "https://data.cooperationdatabank.org/vocab/prop/symmetric", "https://data.cooperationdatabank.org/vocab/prop/threshold",
+      "https://data.cooperationdatabank.org/vocab/prop/thresholdLevel";
+    codaNP:has-effect-value 3.07779E-1;
+    codaNP:has-sample-size 7.0E1;
+    codaNP:has-stderr 1.79321E-2;
+    codaNP:has-var 2.25092E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:42.893Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano60_2020-08-20-154621_629#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano66_2020-11-18-201842_898#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.2.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/endowmentSize";
+    codaNP:has-effect-value 5.10906E-1;
+    codaNP:has-sample-size 6.0E1;
+    codaNP:has-stderr 2.17256E-2;
+    codaNP:has-var 2.83202E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:43.671Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano61_2020-08-20-154622_643#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano67_2020-11-18-201843_678#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.2.4.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/endowmentSize", "https://data.cooperationdatabank.org/vocab/prop/threshold",
+      "https://data.cooperationdatabank.org/vocab/prop/thresholdLevel";
+    codaNP:has-effect-value -1.59946E-1;
+    codaNP:has-sample-size 6.0E1;
+    codaNP:has-stderr 2.71804E-2;
+    codaNP:has-var 4.43266E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:44.425Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano62_2020-08-20-154623_552#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano68_2020-11-18-201844_432#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.2.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/endowmentSize", "https://data.cooperationdatabank.org/vocab/prop/threshold",
+      "https://data.cooperationdatabank.org/vocab/prop/thresholdLevel";
+    codaNP:has-effect-value 6.36758E-1;
+    codaNP:has-sample-size 6.0E1;
+    codaNP:has-stderr 2.34332E-2;
+    codaNP:has-var 3.29468E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:45.166Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano63_2020-08-20-154624_592#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano69_2020-11-18-201845_173#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.3.4.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/endowmentSize", "https://data.cooperationdatabank.org/vocab/prop/threshold",
+      "https://data.cooperationdatabank.org/vocab/prop/thresholdLevel";
+    codaNP:has-effect-value -6.03241E-1;
+    codaNP:has-sample-size 6.0E1;
+    codaNP:has-stderr 2.50283E-2;
+    codaNP:has-var 3.75848E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:46.022Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano64_2020-08-20-154625_348#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano70_2020-11-18-201846_026#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.3.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/endowmentLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/endowmentSize", "https://data.cooperationdatabank.org/vocab/prop/threshold",
+      "https://data.cooperationdatabank.org/vocab/prop/thresholdLevel";
+    codaNP:has-effect-value 2.25526E-1;
+    codaNP:has-sample-size 6.0E1;
+    codaNP:has-stderr 2.08338E-2;
+    codaNP:has-var 2.60428E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:46.949Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano65_2020-08-20-154626_155#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano71_2020-11-18-201846_959#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00032_1.1.4.5.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/threshold", "https://data.cooperationdatabank.org/vocab/prop/thresholdLevel";
+    codaNP:has-effect-value 7.02771E-1;
+    codaNP:has-sample-size 6.0E1;
+    codaNP:has-stderr 2.64965E-2;
+    codaNP:has-var 4.21238E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Edward J. Cartwright", "Federica Alberti";
+    dct:date "2015-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00032_1;
+    cp:doi <http://dx.doi.org/10.1628/001522115x14180267843207>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "31"^^xsd:int, "56"^^xsd:int, "71"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2012"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:47.837Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano66_2020-08-20-154626_888#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano72_2020-11-18-201847_853#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00035_1.2.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/expectationsLevel";
+    codaNP:has-effect-value 6.81993E-1;
+    codaNP:has-sample-size 1.8E1;
+    codaNP:has-stderr 6.08581E-2;
+    codaNP:has-var 6.66667E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Diana Mansell", "James E. Alcock";
+    dct:date "1977-09-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00035_1;
+    cp:doi <http://dx.doi.org/10.1177/002200277702100304>;
+    cp:maleProportion 4.14286E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "10"^^xsd:int;
+    cp:studyKindex 3.84615E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1997"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:48.643Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano67_2020-08-20-154627_787#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano75_2020-11-18-201850_195#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00035_2.3.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/expectationsLevel";
+    codaNP:has-effect-value 6.1414E-1;
+    codaNP:has-sample-size 2.4E1;
+    codaNP:has-stderr 4.45436E-2;
+    codaNP:has-var 4.76191E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Diana Mansell", "James E. Alcock";
+    dct:date "1977-09-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00035_2;
+    cp:doi <http://dx.doi.org/10.1177/002200277702100304>;
+    cp:maleProportion 9.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "10"^^xsd:int;
+    cp:studyKindex 3.84615E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1997"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:51.010Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano70_2020-08-20-154630_706#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano82_2020-11-18-201857_220#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00041_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 6.19731E-2;
+    codaNP:has-sample-size 1.44E2;
+    codaNP:has-stderr 7.6848E-3;
+    codaNP:has-var 8.50418E-3 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG00041_1;
+    cp:doi <http://dx.doi.org/10.1037//0022-3514.66.4.688>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "28"^^xsd:int, "7"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1993"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:18:58.617Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano77_2020-08-20-154636_646#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano85_2020-11-18-201900_257#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00043_1.2.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/decisionMakerUnitSize",
+      "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 3.76188E-1;
+    codaNP:has-sample-size 7.7E1;
+    codaNP:has-stderr 1.34177E-2;
+    codaNP:has-var 1.38626E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Lorraine R McQueen", "Lynn M Schaerfl", "Scott T Allison";
+    dct:date "1992-01-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00043_1;
+    cp:doi <http://dx.doi.org/10.1016/0022-1031(92)90030-n>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "12"^^xsd:int, "3"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "25"^^xsd:int, "7"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "1990"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:02.402Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano86_2020-11-18-201904_341#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00043_2.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/decisionMakerUnitSize",
+      "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value -2.39025E-1;
+    codaNP:has-sample-size 4.6E1;
+    codaNP:has-stderr 3.63058E-2;
+    codaNP:has-var 6.06331E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Lorraine R McQueen", "Lynn M Schaerfl", "Scott T Allison";
+    dct:date "1992-01-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00043_2;
+    cp:doi <http://dx.doi.org/10.1016/0022-1031(92)90030-n>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "12"^^xsd:int, "3"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "25"^^xsd:int, "7"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "1990"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:06.409Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano87_2020-11-18-201906_420#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00043_2.2.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/decisionMakerUnitSize",
+      "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 6.894E-1;
+    codaNP:has-sample-size 2.4E1;
+    codaNP:has-stderr 4.87686E-2;
+    codaNP:has-var 5.7081E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Lorraine R McQueen", "Lynn M Schaerfl", "Scott T Allison";
+    dct:date "1992-01-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00043_2;
+    cp:doi <http://dx.doi.org/10.1016/0022-1031(92)90030-n>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "12"^^xsd:int, "3"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "25"^^xsd:int, "7"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "1990"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:07.898Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano88_2020-11-18-201907_909#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00043_2.3.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/decisionMakerUnitSize",
+      "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 4.15493E-1;
+    codaNP:has-sample-size 2.2E1;
+    codaNP:has-stderr 4.66113E-2;
+    codaNP:has-var 4.77974E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Lorraine R McQueen", "Lynn M Schaerfl", "Scott T Allison";
+    dct:date "1992-01-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00043_2;
+    cp:doi <http://dx.doi.org/10.1016/0022-1031(92)90030-n>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "12"^^xsd:int, "3"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "25"^^xsd:int, "7"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "1990"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:08.958Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano89_2020-11-18-201908_971#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00043_2.4.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/withdrawals>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/resourceSize", "https://data.cooperationdatabank.org/vocab/prop/resourceSizeLevel";
+    codaNP:has-effect-value -5.43558E-1;
+    codaNP:has-sample-size 4.6E1;
+    codaNP:has-stderr 4.31519E-2;
+    codaNP:has-var 8.56561E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Lorraine R McQueen", "Lynn M Schaerfl", "Scott T Allison";
+    dct:date "1992-01-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00043_2;
+    cp:doi <http://dx.doi.org/10.1016/0022-1031(92)90030-n>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "12"^^xsd:int, "3"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "25"^^xsd:int, "7"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "1990"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:09.733Z"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano115_2020-11-18-201942_356#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00099_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/intergroupComp";
+    codaNP:has-effect-value 2.36102E-1;
+    codaNP:has-sample-size 6.6E1;
+    codaNP:has-stderr 1.8622E-2;
+    codaNP:has-var 2.28875E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Howard Kunreuther", "Pavel Atanasov";
+    dct:date "2015-05-15"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00099_1;
+    cp:doi <http://dx.doi.org/10.1002/bdm.1880>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 4.22222E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2015"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:43.471Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano105_2020-08-20-154704_865#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano116_2020-11-18-201943_474#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00099_1.2.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/intergroupComp";
+    codaNP:has-effect-value -6.99371E-2;
+    codaNP:has-sample-size 6.4E1;
+    codaNP:has-stderr 1.72358E-2;
+    codaNP:has-var 1.90126E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Howard Kunreuther", "Pavel Atanasov";
+    dct:date "2015-05-15"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00099_1;
+    cp:doi <http://dx.doi.org/10.1002/bdm.1880>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 4.22222E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2015"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:44.400Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano106_2020-08-20-154705_618#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano125_2020-11-18-201953_507#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00100_3.3.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/sVOType";
+    codaNP:has-effect-value -2.06614E-1;
+    codaNP:has-sample-size 2.24E2;
+    codaNP:has-stderr 4.5035E-3;
+    codaNP:has-var 4.54309E-3 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG00100_3;
+    cp:doi <http://dx.doi.org/NA>;
+    cp:maleProportion 2.8125E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>,
+      <https://data.cooperationdatabank.org/id/studygameincentive/4>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyMPCR 7.5E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "21"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2017"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/4> rdfs:label "Non-monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:54.769Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano115_2020-08-20-154712_947#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano126_2020-11-18-201957_616#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00104_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/uncertaintyLevel";
+    codaNP:has-effect-value 4.59681E-2;
+    codaNP:has-sample-size 5.2E1;
+    codaNP:has-stderr 2.10456E-2;
+    codaNP:has-var 2.30317E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Winton Au";
+    dct:date "2004-03-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00104_1;
+    cp:doi <http://dx.doi.org/10.1037/1089-2699.8.1.40>;
+    cp:maleProportion 1.0E0;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/3>;
+    cp:studyGroupSize "5"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2002"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/3> rdfs:label "Non-monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:58.737Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano116_2020-08-20-154714_965#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano127_2020-11-18-201958_747#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00104_2.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/uncertaintyLevel";
+    codaNP:has-effect-value 3.39019E-2;
+    codaNP:has-sample-size 9.5E1;
+    codaNP:has-stderr 1.18267E-2;
+    codaNP:has-var 1.32878E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Winton Au";
+    dct:date "2004-03-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00104_2;
+    cp:doi <http://dx.doi.org/10.1037/1089-2699.8.1.40>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "4"^^xsd:int, "5"^^xsd:int, "6"^^xsd:int;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2002"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:19:59.552Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano117_2020-08-20-154715_718#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano128_2020-11-18-202000_597#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00105_1.3.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/mPCR", "https://data.cooperationdatabank.org/vocab/prop/mPCRlevel";
+    codaNP:has-effect-value -1.84451E-2;
+    codaNP:has-sample-size 3.6E2;
+    codaNP:has-stderr 3.0639E-3;
+    codaNP:has-var 3.37953E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Man Wing Chung", "Wing Tung Au";
+    dct:date "2006-10-10"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00105_1;
+    cp:doi <http://dx.doi.org/10.1007/s10726-006-9067-1>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "9"^^xsd:int;
+    cp:studyMPCR 2.4E-1, 2.85E-1, 3.3E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2007"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:20:01.449Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano118_2020-08-20-154716_425#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano129_2020-11-18-202001_458#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00105_1.3.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/mPCR", "https://data.cooperationdatabank.org/vocab/prop/mPCRlevel";
+    codaNP:has-effect-value -6.18261E-2;
+    codaNP:has-sample-size 3.6E2;
+    codaNP:has-stderr 3.0781E-3;
+    codaNP:has-var 3.41092E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Man Wing Chung", "Wing Tung Au";
+    dct:date "2006-10-10"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00105_1;
+    cp:doi <http://dx.doi.org/10.1007/s10726-006-9067-1>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "9"^^xsd:int;
+    cp:studyMPCR 2.4E-1, 2.85E-1, 3.3E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2007"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:20:02.292Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano119_2020-08-20-154717_184#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano130_2020-11-18-202002_303#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00105_1.3.2.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/mPCR", "https://data.cooperationdatabank.org/vocab/prop/mPCRlevel";
+    codaNP:has-effect-value -4.34552E-2;
+    codaNP:has-sample-size 3.6E2;
+    codaNP:has-stderr 3.0812E-3;
+    codaNP:has-var 3.4178E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Man Wing Chung", "Wing Tung Au";
+    dct:date "2006-10-10"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00105_1;
+    cp:doi <http://dx.doi.org/10.1007/s10726-006-9067-1>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/2>;
+    cp:studyGroupSize "9"^^xsd:int;
+    cp:studyMPCR 2.4E-1, 2.85E-1, 3.3E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2007"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/2> rdfs:label "Monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:20:03.495Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano120_2020-08-20-154718_115#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano140_2020-11-18-202022_744#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00140_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value -3.30109E-1;
+    codaNP:has-sample-size 1.28E2;
+    codaNP:has-stderr 8.0147E-3;
+    codaNP:has-var 8.22207E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Hélène Barcelo", "Valerio Capraro";
+    dct:date "2015-01-21"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00140_1;
+    cp:doi <http://dx.doi.org/10.1038/srep07937>;
+    cp:maleProportion 5.9E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/1>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "4"^^xsd:int, "40"^^xsd:int;
+    cp:studyMPCR 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "11"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "2014"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/1> rdfs:label "Online" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:20:23.526Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano130_2020-08-20-154727_767#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano141_2020-11-18-202023_527#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00140_2.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/groupSizeLevel",
+      "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 1.93216E-1;
+    codaNP:has-sample-size 1.53E2;
+    codaNP:has-stderr 7.754E-3;
+    codaNP:has-var 9.19914E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Hélène Barcelo", "Valerio Capraro";
+    dct:date "2015-01-21"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00140_2;
+    cp:doi <http://dx.doi.org/10.1038/srep07937>;
+    cp:maleProportion 7.0E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/1>;
+    cp:studyGroupSize "11"^^xsd:int, "2"^^xsd:int;
+    cp:studyKindex 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "2014"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/1> rdfs:label "Online" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:20:24.289Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano131_2020-08-20-154728_751#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano144_2020-11-18-202031_823#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00150_1.3.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/individualDifferenceLevel";
+    codaNP:has-effect-value 2.74501E-2;
+    codaNP:has-sample-size 1.62E2;
+    codaNP:has-stderr 7.0763E-3;
+    codaNP:has-var 8.11203E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Ainhoa Jaramillo-Gutiérrez", "Gerardo Sabater-Grande",
+      "Iván Barreda-Tarrazona", "Marina Pavan";
+    dct:date "2017-04-20"^^xsd:date;
+    prov:wasDerivedFrom cr:ENG00150_1;
+    cp:doi <http://dx.doi.org/10.3389/fpsyg.2017.00596>;
+    cp:maleProportion 5.29136E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 3.57143E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>,
+      <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>, <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "2014"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-11-18T20:20:32.655Z"^^xsd:dateTime;
+    npx:supersedes <https://data.cooperationdatabank.org/coda/nanopub/nano135_2020-08-20-154732_397#>;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v2.0.0.0";
+    prov:used <https://github.com/Nanopublication/nanopub-java>;
+    prov:wasGeneratedBy "CoDa" .
+}

@@ -1,0 +1,56 @@
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano470_2020-08-20-155334_807#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00336_1.1.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/gender";
+    codaNP:has-effect-value 1.70552E-1;
+    codaNP:has-sample-size 1.26E2;
+    codaNP:has-stderr 9.0264E-3;
+    codaNP:has-var 1.02659E-2 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Lawrence J. Becker", "Philip Brickman", "Sidney Castle";
+    dct:date "1979-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG00336_1;
+    cp:doi <http://dx.doi.org/10.1037/0022-3514.37.4.515>;
+    cp:maleProportion 4.76E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/5>;
+    cp:studyGroupSize "2"^^xsd:int;
+    cp:studyKindex 3.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "1978"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/5> rdfs:label "Lab in the field" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-08-20T15:53:35.652+01:00"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v1.0.0.0" .
+}

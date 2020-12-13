@@ -1,0 +1,59 @@
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano1640_2020-08-20-161417_177#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG01341_2.1.1.3.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/anchor";
+    codaNP:has-effect-value 2.23145E-1;
+    codaNP:has-sample-size 1.46E2;
+    codaNP:has-stderr 6.9142E-3;
+    codaNP:has-var 6.97972E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "Halszka Jarodzka", "Joachim Kimmerle", "Katrin Wodzicki",
+      "Ulrike Cress";
+    dct:date "2011-01-01"^^xsd:gYear;
+    prov:wasDerivedFrom cr:ENG01341_2;
+    cp:doi <http://dx.doi.org/10.1037/a0021467>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/1>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/4>;
+    cp:studyGroupSize "6"^^xsd:int;
+    cp:studyKindex 2.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/2>;
+    cp:studyNumberOfChoices "10"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/0>;
+    cp:yearOfDataCollection "2010"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/1> rdfs:label "Online" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/4> rdfs:label "Non-monetary lottery" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/2> rdfs:label "Partner" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/0> rdfs:label "Repeated" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-08-20T16:14:18.085+01:00"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v1.0.0.0" .
+}

@@ -1,0 +1,68 @@
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano308_2020-08-20-155009_735#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00306_1o.3.1.2.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/contributions>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/timePressure";
+    codaNP:has-effect-value -9.85915E-2;
+    codaNP:has-sample-size 2.16E2;
+    codaNP:has-stderr 4.6302E-3;
+    codaNP:has-var 4.63081E-3 .
+}
+
+this:provenance {
+  this:assertion dct:creator "A. E. van ‘t Veer", "A. Glöckner", "A. Herrero", "A. M. Espín",
+      "A. M. Evans", "A. Srivastava", "A. Szollosi", "B. Aczel", "B. Palfi", "B. Szaszi",
+      "C. E. Wollbrant", "C. Mauro", "D. Mischkowski", "D. Navarro-Martínez", "D. Västfjäll",
+      "E. C. Martins", "E. Salomon", "E. Wengström", "F. Barbosa", "F. Ferreira-Santos",
+      "F. S. Døssing", "G. Cornelissen", "G. Tinghög", "J. Flegr", "J. J. Van Bavel", "J. Lohse",
+      "J. Novakova", "J. S. Trueblood", "J. Wills", "K. O. R. Myrseth", "K. Ø. Thor", "L. Bègue",
+      "L. Guo", "L. Koppel", "M. Ghaffari", "M. Johannesson", "M. Piovesan", "M. Warner",
+      "N. Srinivasan", "O. P. Hauser", "P. Brañas-Garza", "P. Houdek", "P. Kujal", "P. P. J. L. Verkoeijen",
+      "R. Hernan-Gonzalez", "R. Pagà", "R.-M. Rahal", "S. Bouwmeester", "S. Fiedler", "S. Mukherjee",
+      "T. G. H. Chmura", "T. Goeschl", "T. Laine", "T. M. S. Neal", "T. O. Paiva", "Z. Horne";
+    dct:date "2017-03-01:00"^^xsd:gYearMonth;
+    prov:wasDerivedFrom cr:ENG00306_1o;
+    cp:doi <http://dx.doi.org/10.1177/1745691617693624>;
+    cp:maleProportion 7.22222E-1;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "4"^^xsd:int;
+    cp:studyMPCR 5.0E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "3001"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "2017"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-08-20T15:50:10.495+01:00"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v1.0.0.0" .
+}

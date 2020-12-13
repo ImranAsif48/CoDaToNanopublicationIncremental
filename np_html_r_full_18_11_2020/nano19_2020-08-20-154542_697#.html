@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nanopublications</title>
+<style>
+body { margin: 20px; font-family: monaco,monospace; font-size: 11pt; color: #444; }
+a { color: #000; text-decoration: none; }
+a:hover { color: #666; }
+.nanopub { margin: 0 0 30px 0; padding: 0px 10px 10px 10px; border-radius: 10px; border: solid; border-width: 1px; }
+.nanopub-prefixes { margin-top: 10px; }
+.nanopub-head { background: #e8e8e8; padding: 10px; margin-top: 10px; border-radius: 10px; }
+.nanopub-assertion { background: #99ccff; padding: 10px; margin-top: 10px; border-radius: 10px; }
+.nanopub-provenance { background: #f3a08c; padding: 10px; margin-top: 10px; border-radius: 10px; }
+.nanopub-pubinfo { background: #ffff66; padding: 10px; margin-top: 10px; border-radius: 10px; }
+</style>
+</head>
+<body>
+<div class="nanopub">
+<div class="nanopub-prefixes">
+@prefix this: &lt;<a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#">https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#</a>&gt; .<br/>
+@prefix rdf: &lt;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>&gt; .<br/>
+@prefix rdfs: &lt;<a href="http://www.w3.org/2000/01/rdf-schema#">http://www.w3.org/2000/01/rdf-schema#</a>&gt; .<br/>
+@prefix codaNP: &lt;<a href="http://www.example.org/">http://www.example.org/</a>&gt; .<br/>
+@prefix orcid: &lt;<a href="https://orcid.org/">https://orcid.org/</a>&gt; .<br/>
+@prefix prov: &lt;<a href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a>&gt; .<br/>
+@prefix dct: &lt;<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>&gt; .<br/>
+@prefix pav: &lt;<a href="http://purl.org/pav/">http://purl.org/pav/</a>&gt; .<br/>
+@prefix np: &lt;<a href="http://www.nanopub.org/nschema#">http://www.nanopub.org/nschema#</a>&gt; .<br/>
+@prefix xsd: &lt;<a href="http://www.w3.org/2001/XMLSchema#">http://www.w3.org/2001/XMLSchema#</a>&gt; .<br/>
+@prefix cc: &lt;<a href="https://data.cooperationdatabank.org/vocab/class/">https://data.cooperationdatabank.org/vocab/class/</a>&gt; .<br/>
+@prefix cp: &lt;<a href="https://data.cooperationdatabank.org/vocab/prop/">https://data.cooperationdatabank.org/vocab/prop/</a>&gt; .<br/>
+@prefix cr: &lt;<a href="https://data.cooperationdatabank.org/id/">https://data.cooperationdatabank.org/id/</a>&gt; .<br/>
+
+</div>
+<div class="nanopub-head">
+<span class="nanopub-context-switch"><a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#Head">this:Head</a> {<br/></span>
+&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#">this:</a> <a href="http://www.nanopub.org/nschema#hasAssertion">np:hasAssertion</a> <a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#assertion">this:assertion</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.nanopub.org/nschema#hasProvenance">np:hasProvenance</a> <a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#provenance">this:provenance</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.nanopub.org/nschema#hasPublicationInfo">np:hasPublicationInfo</a> <a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#pubinfo">this:pubinfo</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">a</a> <a href="http://www.nanopub.org/nschema#Nanopublication">np:Nanopublication</a> . <br/>
+<span class="nanopub-context-switch">}<br/></span>
+</div>
+<div class="nanopub-assertion">
+<span class="nanopub-context-switch"><a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#assertion">this:assertion</a> {<br/></span>
+&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/id/ENG00013_1.1.2.3.r">cr:ENG00013_1.1.2.3.r</a> <a href="http://www.example.org/claimsDV">codaNP:claimsDV</a> &lt;<a href="https://data.cooperationdatabank.org/id/dependentvariable/cooperation">https://data.cooperationdatabank.org/id/dependentvariable/cooperation</a>&gt; ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.example.org/claimsIV">codaNP:claimsIV</a> "https://data.cooperationdatabank.org/vocab/prop/targetMembership" ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.example.org/has-effect-value">codaNP:has-effect-value</a> 3.44038E-1 ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.example.org/has-sample-size">codaNP:has-sample-size</a> 9.6E1 ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.example.org/has-stderr">codaNP:has-stderr</a> 1.23123E-2 ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.example.org/has-var">codaNP:has-var</a> 1.4553E-2 . <br/>
+<span class="nanopub-context-switch">}<br/></span>
+</div>
+<div class="nanopub-provenance">
+<span class="nanopub-context-switch"><a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#provenance">this:provenance</a> {<br/></span>
+&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#assertion">this:assertion</a> <a href="http://purl.org/dc/terms/creator">dct:creator</a> "Ali M. Ahmed" ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://purl.org/dc/terms/date">dct:date</a> "2007-06-01:00"^^<a href="http://www.w3.org/2001/XMLSchema#gYearMonth">xsd:gYearMonth</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.w3.org/ns/prov#wasDerivedFrom">prov:wasDerivedFrom</a> <a href="https://data.cooperationdatabank.org/id/ENG00013_1">cr:ENG00013_1</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/doi">cp:doi</a> &lt;<a href="http://dx.doi.org/10.1016/j.joep.2007.01.007">http://dx.doi.org/10.1016/j.joep.2007.01.007</a>&gt; ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/maleProportion">cp:maleProportion</a> 5.28985E-1 ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/studyExperimentalSetting">cp:studyExperimentalSetting</a> &lt;<a href="https://data.cooperationdatabank.org/id/studyexperimentalsetting/2">https://data.cooperationdatabank.org/id/studyexperimentalsetting/2</a>&gt; ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/studyGameIncentive">cp:studyGameIncentive</a> &lt;<a href="https://data.cooperationdatabank.org/id/studygameincentive/2">https://data.cooperationdatabank.org/id/studygameincentive/2</a>&gt; ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/studyGroupSize">cp:studyGroupSize</a> "2"^^<a href="http://www.w3.org/2001/XMLSchema#int">xsd:int</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/studyKindex">cp:studyKindex</a> 5.0E-1 ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/studyMatchingProtocol">cp:studyMatchingProtocol</a> &lt;<a href="https://data.cooperationdatabank.org/id/studymatchingprotocol/1">https://data.cooperationdatabank.org/id/studymatchingprotocol/1</a>&gt; ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/studyNumberOfChoices">cp:studyNumberOfChoices</a> "2"^^<a href="http://www.w3.org/2001/XMLSchema#int">xsd:int</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/studyOneShot">cp:studyOneShot</a> &lt;<a href="https://data.cooperationdatabank.org/id/studyoneshot/1">https://data.cooperationdatabank.org/id/studyoneshot/1</a>&gt; ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/vocab/prop/yearOfDataCollection">cp:yearOfDataCollection</a> "2005"^^<a href="http://www.w3.org/2001/XMLSchema#int">xsd:int</a> . <br/>
+&nbsp;&nbsp;&lt;<a href="https://data.cooperationdatabank.org/id/studyexperimentalsetting/2">https://data.cooperationdatabank.org/id/studyexperimentalsetting/2</a>&gt; <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> "Lab" . <br/>
+&nbsp;&nbsp;&lt;<a href="https://data.cooperationdatabank.org/id/studygameincentive/2">https://data.cooperationdatabank.org/id/studygameincentive/2</a>&gt; <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> "Monetary lottery" . <br/>
+&nbsp;&nbsp;&lt;<a href="https://data.cooperationdatabank.org/id/studymatchingprotocol/1">https://data.cooperationdatabank.org/id/studymatchingprotocol/1</a>&gt; <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> "Stranger" . <br/>
+&nbsp;&nbsp;&lt;<a href="https://data.cooperationdatabank.org/id/studyoneshot/1">https://data.cooperationdatabank.org/id/studyoneshot/1</a>&gt; <a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> "One-shot" . <br/>
+<span class="nanopub-context-switch">}<br/></span>
+</div>
+<div class="nanopub-pubinfo">
+<span class="nanopub-context-switch"><a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#pubinfo">this:pubinfo</a> {<br/></span>
+&nbsp;&nbsp;<a href="https://data.cooperationdatabank.org/coda/nanopub/nano19_2020-08-20-154542_697#">this:</a> <a href="http://purl.org/dc/terms/created">dct:created</a> "2020-08-20T15:45:43.687+01:00"^^<a href="http://www.w3.org/2001/XMLSchema#dateTime">xsd:dateTime</a> ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://purl.org/pav/createdBy">pav:createdBy</a> &lt;<a href="http://orcid.org/0000-0002-1144-6265">http://orcid.org/0000-0002-1144-6265</a>&gt; ;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://purl.org/pav/version">pav:version</a> "v1.0.0.0" . <br/>
+<span class="nanopub-context-switch">}<br/></span>
+</div>
+</div>

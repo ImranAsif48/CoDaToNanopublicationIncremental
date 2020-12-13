@@ -1,0 +1,56 @@
+@prefix this: <https://data.cooperationdatabank.org/coda/nanopub/nano782_2020-08-20-155823_927#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix codaNP: <http://www.example.org/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://data.cooperationdatabank.org/vocab/class/> .
+@prefix cp: <https://data.cooperationdatabank.org/vocab/prop/> .
+@prefix cr: <https://data.cooperationdatabank.org/id/> .
+
+this:Head {
+  this: np:hasAssertion this:assertion;
+    np:hasProvenance this:provenance;
+    np:hasPublicationInfo this:pubinfo;
+    a np:Nanopublication .
+}
+
+this:assertion {
+  cr:ENG00619_1.4.2.4.r codaNP:claimsDV <https://data.cooperationdatabank.org/id/dependentvariable/cooperation>;
+    codaNP:claimsIV "https://data.cooperationdatabank.org/vocab/prop/groupSize", "https://data.cooperationdatabank.org/vocab/prop/numberOfDecisionMakers";
+    codaNP:has-effect-value 2.12196E-1;
+    codaNP:has-sample-size 1.9E1;
+    codaNP:has-stderr 5.85161E-2;
+    codaNP:has-var 6.50585E-2 .
+}
+
+this:provenance {
+  this:assertion prov:wasDerivedFrom cr:ENG00619_1;
+    cp:doi <http://dx.doi.org/10.1037//0022-3514.35.1.1>;
+    cp:studyExperimentalSetting <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2>;
+    cp:studyGameIncentive <https://data.cooperationdatabank.org/id/studygameincentive/1>;
+    cp:studyGroupSize "5"^^xsd:int, "6"^^xsd:int, "7"^^xsd:int, "8"^^xsd:int;
+    cp:studyKindex 1.35E-1, 2.38E-1;
+    cp:studyMatchingProtocol <https://data.cooperationdatabank.org/id/studymatchingprotocol/1>;
+    cp:studyNumberOfChoices "2"^^xsd:int;
+    cp:studyOneShot <https://data.cooperationdatabank.org/id/studyoneshot/1>;
+    cp:yearOfDataCollection "1967"^^xsd:int .
+  
+  <https://data.cooperationdatabank.org/id/studyexperimentalsetting/2> rdfs:label "Lab" .
+  
+  <https://data.cooperationdatabank.org/id/studygameincentive/1> rdfs:label "Monetary" .
+  
+  <https://data.cooperationdatabank.org/id/studymatchingprotocol/1> rdfs:label "Stranger" .
+  
+  <https://data.cooperationdatabank.org/id/studyoneshot/1> rdfs:label "One-shot" .
+}
+
+this:pubinfo {
+  this: dct:created "2020-08-20T15:58:24.676+01:00"^^xsd:dateTime;
+    pav:createdBy <http://orcid.org/0000-0002-1144-6265>;
+    pav:version "v1.0.0.0" .
+}
